@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maurice Asamani | Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+ <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">
+        <a href="#home">Maurice Asamani</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonial</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Maurice Asamani</h1>
+            <p>A passionate Graphic Designer.</p>
+            <a href="#portfolio" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+     <!-- About Section -->
+     <section id="about" class="about" data-aos="fade-up">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="about-me">About Me</h2>
+                <p>Hello! I'm Maurice, a passionate and creative graphic designer dedicated to crafting visually stunning and effective designs.
+
+                    With a keen eye for detail and a passion for innovation, I help businesses and individuals bring their brands to life through compelling visual storytelling. My expertise spans logo design, branding, print design, digital design, and more.
+                    
+                    As a creative problem-solver, I thrive on challenges that push the boundaries of design. I'm driven by a desire to create designs that inspire, educate, and connect people.
+                    
+                    When I'm not designing, you can find me exploring new creative outlets, reading about the latest design trends, or simply enjoying the beauty of the world around us.
+                    
+                    Let's collaborate and create something amazing together!
+                    </p>
+            </div>
+            <div class="about-image">
+                <img src="c:\Users\Maurice\Desktop\images\WhatsApp Image 2024-12-12 at 20.53.54_63e73bf4.jpg" alt="Your Photo" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" data-aos="fade-left">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                <a href="c:\Users\Maurice\Desktop\DESIGNS\SHADOW NET.jpg">
+                    <img src="c:\Users\Maurice\Desktop\DESIGNS\SHADOW NET.jpg"   alt="Design 1">
+                </a>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <a href="c:\Users\Maurice\Desktop\DESIGNS\main cover.jpg">
+                    <img src="c:\Users\Maurice\Desktop\DESIGNS\main cover.jpg" alt="Design 2">
+                </a>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                <a href="c:\Users\Maurice\Desktop\DESIGNS\the darkest hour cover.jpg">
+                    <img src="c:\Users\Maurice\Desktop\DESIGNS\the darkest hour cover.jpg" alt="Design 3">
+                </a>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <!--seemore section-->
+
+    <div class="seemore" id="seemore" >
+        <a href="underconstruct.html" class="seemore-button"  > More..</a>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
+        <h2 class="Client-say">What Clients Say</h2>
+        <div class="testimonial" data-aos="fade-right" data-aos-delay="200">
+            <p>"Maurice took the time to understand our brand and created a stunning logo that perfectly captures our essence. His attention to detail and dedication to delivering high-quality work are impressive."
+                </p>
+            <p>-Emily R., Founder of Green Earth </p>
+        </div>
+        <div class="testimonial" data-aos="fade-left" data-aos-delay="400">
+            <p>"We've worked with Maurice on several projects, and each time, he's delivered exceptional results. His ability to balance creativity with practicality is a rare talent."</p>
+            <p>- David K., Marketing Manager at TechCorp  </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required data-aos="fade-right">
+            <input type="email" name="email" id="email" placeholder="Your Email" required data-aos="fade-left">
+            <textarea name="message" id="message" placeholder="Your Message" required data-aos="fade-up"></textarea>
+            <button type="submit" data-aos="zoom-in">Send Message</button>
+        </form>
+        <div id="form-message" data-aos="fade-up"></div>
+        <div class="Phone-info">
+            <div class="logo-bar">
+                <img src="c:\Users\Maurice\Desktop\images\phone.png" alt="phone" class="phone-logo">
+            <p class="text">Phone Info</p>
+            </div>
+        <ul class="Phone-list">
+            <li class="phone"  required data-aos="fade-left">Phone: +233 537923546</li>
+            <li class="whatsapp"  required data-aos="fade-right">WhatsApp: +233 537923546 </li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maurice Asamani | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+            once: true,
+        });
+
+        // Initialize EmailJS
+        emailjs.init('Maurice Asamani');  // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = event.target;
+            const formMessage = document.getElementById('form-message');
+            const formData = new FormData(form);
+
+            // Send email via EmailJS
+            emailjs.sendForm('service_1ea2kqe', 'template_xi28yio', formData)  // Replace with your EmailJS service ID and template ID
+                .then(function (response) {
+                    formMessage.textContent = "Your message has been sent successfully!";
+                    formMessage.style.color = "green";
+                    form.reset();  // Clear the form after sending
+                }, function (error) {
+                    formMessage.textContent = "There was an error sending your message. Please try again.";
+                    formMessage.style.color = "red";
+                });
+        });
+    </script>
+</body>
+
+</html>

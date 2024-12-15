@@ -1,0 +1,345 @@
+/* Basic reset */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px 0;
+    text-align:center;
+}
+/* Navbar */
+.navbar {
+    position : fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('c:\Users\Maurice\Pictures\maurice.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* General Styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery{
+    align-content: space-around;
+}
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/*seemorebutton */
+.seemore{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 10px;
+    margin: 0 auto;
+}
+.seemore-button{
+background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border:10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seemore:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Scroll Animation */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Home Section */
+#home h1 {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+#home p {
+    animation: fadeIn 1.5s ease-out;
+}
+/* background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    /*
+/* Testimonials Section */
+.testimonial {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial p:nth-child(2) {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Contact Form */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* contact-form */
+ .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+ }
+
+ /* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer ul li a img:hover {
+    transform: scale(1.2);
+}
+
+.text{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.Phone-list{
+    background-color: rgb(5, 126, 25);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.phone{
+margin-top: 10px;
+font-style: oblique;
+
+}
+
+.whatsapp{
+margin-bottom: 4px;
+}
+
+.phone-logo{
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.logo-bar{
+    list-style:inside;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px; 
+}
